@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@layout/fragment_main">
+    app:startDestination="@id/fragment_main">
     <!--
        本文件主要是进行一些页面之间的设置，如页面间跳转关系，跳转参数类型、个数规定、页面间跳转动画等。
 
