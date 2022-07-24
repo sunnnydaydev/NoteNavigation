@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@layout/fragment_main">
+    <!--
+       本文件主要是进行一些页面之间的设置，如页面间跳转关系，跳转参数类型、个数规定、页面间跳转动画等。
+
+       1、起始目的地设置:     通过 app:startDestination 来设置起始目的地。
+       2、页面间的跳转关系:   通过 action标签进行配置
+       3、参数类型配置:      通过 argument来进行配置
+
+       ps：
+
+       导航图中注册的fragment都必须有id
+
+       layout标签如果不配置，我们无法在Design视图看到页面预览效果
+
+    -->
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.notenavigation.fragments.MainFragment"
+        android:label="@string/home_page"
+        tools:layout="@layout/fragment_main">
+       <!--可以从本页面跳转到哪个页面，action可以有多个。action也要有id-->
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_blank"
+            app:destination="@id/fragment_blank" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_blank"
+        android:name="com.example.notenavigation.fragments.BlankFragment"
+        android:label="@string/hello_blank_fragment"
+        tools:layout="@layout/fragment_blank">
+       <!--跳转到本页面时需要传递过来的参数，argument可有多个-->
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
