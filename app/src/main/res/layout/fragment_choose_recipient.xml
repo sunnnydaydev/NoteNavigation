@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nest.BalanceFragment">
+    tools:context=".nest.ChooseRecipientFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="view_balance_fragment"
-        android:gravity="center_horizontal"/>
+        android:text="choose_recipient_fragment"
+        android:gravity="end"/>
 
 </FrameLayout>
