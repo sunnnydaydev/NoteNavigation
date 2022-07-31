@@ -17,9 +17,11 @@ class NestActivity : AppCompatActivity() {
 
 
         // 跳转到第二个导航图的起始目的地
-        navController.navigate(HomeFragmentDirections.actionHomeFragmentToSendMoneyGraph())
+      //  navController.navigate(HomeFragmentDirections.actionHomeFragmentToSendMoneyGraph())
 
-        navController.navigate(ChooseRecipientFragmentDirections.actionChooseRecipientFragmentToChooseAmountFragment())
+      //  navController.navigate(ChooseRecipientFragmentDirections.actionChooseRecipientFragmentToChooseAmountFragment())
+
+        navController.navigate(HomeFragmentDirections.actionHomeFragmentToInclude())
 
 
     }

@@ -16,6 +16,11 @@
         <action
             android:id="@+id/action_home_fragment_to_sendMoneyGraph"
             app:destination="@id/sendMoneyGraph" />
+<!--        注意这里的destination的id不要定义为include标签的id，要定义为导航图的id，也即navigation标签下的id-->
+        <action
+            android:id="@+id/action_home_fragment_to_include"
+            app:destination="@id/nav_include" />
+
     </fragment>
 
     <fragment
@@ -49,5 +54,9 @@
 
     </navigation>
 
+<!--    include 也要有id，不设置id时，通过设计视图自动生成其他页面跳转到本页面的action时失败-->
+    <include
+        android:id="@+id/include"
+        app:graph="@navigation/nav_include" />
 
 </navigation>
