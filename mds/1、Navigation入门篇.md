@@ -212,7 +212,11 @@ buildscript {
 }
 // app/build.gradle
 plugins {
+    // 生成适用于 Java 模块或 Java 和 Kotlin 混合模块的 Java 语言代码
     id 'androidx.navigation.safeargs'
+
+    // 生成仅适用于 Kotlin 模块的 Kotlin 语言代码
+    id 'androidx.navigation.safeargs.kotlin'
 }
 ```
 
