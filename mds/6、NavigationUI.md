@@ -7,3 +7,6 @@ Navigation功能还是比较强大的 ，可以结合顶部应用栏、抽屉导
 # 二、抽屉导航栏
 
 # 三、底部导航栏
+
+Navigation 集合BottomNavigationView 控件的使用。
+
